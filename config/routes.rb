@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  get "tasks/index"
+  get "tasks/show"
+  get "tasks/edit"
+  get "tasks/new"
+  get "task/index"
+  get "task/show"
+  get "task/new"
+  get "task/edit"
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.
