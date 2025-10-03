@@ -34,7 +34,7 @@ class TasksController < ApplicationController
     respond_to do |format| 
       # Ira criar essa tarefa
       if @task.save
-        format.html { redirect_to @task, notice: 'Cadastrado com Sucesso!' }
+        format.html { redirect_to tasks_path, notice: 'Cadastrado com Sucesso!' }
         format.json { render :show, status: :created , location: @task}
       else
         # Se tiver os dados no banco de dados ele irá para a tela de new novamente
@@ -61,7 +61,7 @@ class TasksController < ApplicationController
   def destroy
     @task.destroy
     respond_to do |format|
-      format.html { redirect_to task_url, notice: 'Excluido com sucesso'}
+      format.html { redirect_to @task, notice: 'Excluido com sucesso'}
       format.json { head :no_content }
     end
   end
