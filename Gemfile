@@ -61,3 +61,7 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+
+# RSpec para testes tdd
+gem 'rspec-rails', '~> 6.0'
+
