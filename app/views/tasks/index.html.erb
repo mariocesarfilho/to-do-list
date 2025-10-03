@@ -22,13 +22,15 @@
         <td><%= task.descricao %></td>
         <td><%= task.status ? "Concluída" : "Pendente" %></td>
         <td>
+        <div class="btn-group">
           <%= link_to "Mostrar", task_path(task), class: "btn btn-sm btn-primary" %>
           <%= link_to "Editar", edit_task_path(task), class: "btn btn-sm btn-warning" %>
-          <%= link_to "Excluir", task_path(task),
+          <%= button_to "Excluir", task_path(task),
                       method: :delete,
                       data: { confirm: "Tem certeza?" },
                       class: "btn btn-sm btn-danger" %>
-        </td>
+          </td>
+        </div>
       </tr>
     <% end %>
   </tbody>
