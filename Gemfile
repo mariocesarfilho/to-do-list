@@ -66,7 +66,7 @@ group :test do
 end
 
 # RSpec para testes tdd
-gem 'rspec-rails', '~> 6.0'
+gem 'rspec-rails', '~> 8.0'
 
 # Faker para testes tdd
 gem 'faker'
